@@ -1,0 +1,26 @@
+<!-- Navbar Start -->
+<!-- <div class="container-fluid bg-light position-relative shadow" style="height:46px;"> -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5" style="height:60px;">
+        <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 24px;">
+            <span class="text-primary">Prospect Tennis College Recruitment Plateform</span>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav font-weight-bold mx-auto py-0" *ngIf="isMenuVisible">
+                <a href="" class="nav-item nav-link active">Get recruited</a>
+                <a href="" class="nav-item nav-link">Our Process</a>
+                <a href="" class="nav-item nav-link">Why?</a>
+            </div>
+            <div class="navbar-nav font-weight-bold mx-auto py-0" *ngIf="!isMenuVisible">
+                    <a href="" class="nav-item nav-link active"></a>
+                    <a href="" class="nav-item nav-link"></a>
+                    <a href="" class="nav-item nav-link"></a>
+                </div>
+            <a routerLink="/login" routerLinkActive="active" href="" class="btn btn-primary px-4" style="margin-right: 4px" *ngIf="isBtnVisible">Login</a>
+            <a routerLink="/register" routerLinkActive="active" class="btn btn-secondary px-4" *ngIf="isBtnVisible">Register</a>
+        </div>
+    </nav>
+<!-- </div> -->
+<!-- Navbar End -->
